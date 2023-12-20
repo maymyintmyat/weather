@@ -10,7 +10,7 @@ export default function Home() {
   const [location, setLocation] = useState("");
   const [error, setError] = useState("");
 
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=a5ed0159a96440f8b49153555231310&q=${location}&days=10&aqi=yes&alerts=yes`;
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=a5ed0159a96440f8b49153555231310&q=${location}&days=10&aqi=yes&alerts=yes`;
 
   const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
